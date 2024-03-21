@@ -13,7 +13,7 @@ class TestLocators:
     input_password = By.XPATH, './/input[@name="Пароль"]'
 
     # Кнопка "Зарегистрироваться"
-    button_submit = By.XPATH, '/html/body/div[1]/div/main/div/form/button'
+    button_submit = By.XPATH, '//button[text() = "Зарегистрироваться"]'
 
     # Сообщение об ошибке: пароль не прошел валидацию
     notification_incorrect_password = By.XPATH, '//p[text() = "Некорректный пароль"]'
@@ -32,7 +32,7 @@ class TestLocators:
     button_login = By.XPATH, '//button[text()="Войти"]'
 
     # Кнопка "Зарегистрироваться"
-    button_register = By.XPATH, '/html/body/div[1]/div/main/div/div/p[1]/a'
+    button_register = By.XPATH, '//a[text() = "Зарегистрироваться"]'
 
     # Восстановление пароля
     # Кнопка "Восстановить пароль"
@@ -46,7 +46,7 @@ class TestLocators:
     profile = By.XPATH, '//a[@href = "/account/profile"]'
 
     # Раздел "История заказов"
-    order_history = By.XPATH, '//a[@href = "/account/order_history"]'
+    order_history = By.XPATH, '//a[@href = "/account/order-history"]'
 
     # Кнопка "Выйти", логаут
     button_logout = By.XPATH, '//button[@type = "button"]'
